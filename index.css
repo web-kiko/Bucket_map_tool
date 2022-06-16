@@ -1,0 +1,120 @@
+body,p {
+    margin: 0;
+}
+ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+input {
+    padding: 0;
+    border: none;
+    box-sizing: border-box;
+    outline: none;
+}
+body {
+    background: #fafafa;
+}
+#warp {
+    width: 1050px;
+    padding: 30px;
+    margin: 100px auto;
+    box-shadow: 0  0 10px rgba(0, 0, 0, .5);
+    border-radius: 10px;
+    display: flex;
+    justify-content: space-around;
+}
+.bigImg {
+    width: 500px;
+    height: 500px;
+    border:  1px solid #303000;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.bigImg img {
+    position: absolute;
+    cursor: move;
+}
+.bigImg .text {
+    position: absolute;
+    left: 0;
+    top: 0;
+    cursor: move;
+    font-size: 30px;
+    line-height: 1;
+    font-weight: bold;
+    user-select: none;
+    white-space: nowrap;
+}
+.tool {
+    width: 500px;
+}
+.tool ul {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.tool li {
+    width: 95px;
+    height: 95px;
+    border:  1px solid #303000;
+    box-sizing: border-box;
+    margin-bottom: 5px;
+    cursor: pointer;
+}
+.tool img {
+    width:100% ;
+    height: 100%;
+}
+ li .active, li:hover {
+    border-color: red;
+ }
+ .tool .edit {
+    margin: 25px 0;
+    border:  1px solid #333333;
+    display: flex;
+    justify-content: space-between;
+ }
+ .tool .edit>input {
+    width: 430px;
+    height: 50px;
+    font-size: 16px;
+    color: #000;
+    padding:0 10px ; 
+    border-radius: 20px;
+ }
+ .fontStyle {
+    width: 60px;
+    background: #ccc;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+ }
+ .fontStyle input {
+    width: 30px;
+    height: 30px;
+    border:  1px solid sandybrown;
+    
+ }
+ 
+ .btn {
+    display: flex;
+    justify-content: space-around;
+ }
+ .downBtn,.upBtn {
+    width: 200px;
+    height: 50px;
+    border: none;
+    padding: 0;
+    background: rgb(46, 46, 224);
+    cursor: pointer;
+    font-size: 18px;
+    color: #fafafa;
+    box-shadow: 3px 3px 0 #ddd;
+    border-radius: 10px;
+ }
+ .downBtn:hover,.upBtn:hover {
+    background: rgb(9, 9, 178);
+ }
